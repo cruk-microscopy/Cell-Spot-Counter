@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.scijava</groupId>
+		<artifactId>pom-scijava</artifactId>
+		<version>16.1.0</version>
+		<relativePath />
+	</parent>
+	
+	<groupId>cam.lmb.niek</groupId>
+	<artifactId>Niek_SpotCounter_</artifactId>
+	<version>1.1.0</version>
+
+	<name>Niek_SpotCounter_</name>
+	<description>An Fiji plugin to detect and count fluorescent spots in cell.</description>
+	<url>https://www.github./hzqfox/Cell-Spot-Counter</url>
+	<inceptionYear>2020</inceptionYear>
+	<organization>
+		<name>Cambridge University</name>
+		<url>http://www.cam.ac.uk/</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>Simplified BSD License</name>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>hzqfox</id>
+			<name>Ziqiang Huang</name>
+			<url>http://github.com/hzqfox</url>
+			<roles>
+				<role>lead</role>
+				<role>developer</role>
+				<role>debugger</role>
+				<role>reviewer</role>
+				<role>support</role>
+				<role>maintainer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<contributors>
+		<contributor>
+			<name>Ziqiang Huang</name>
+			<url>http://github.com/hzqfox</url>
+			<roles><role>founder</role></roles>
+			<properties><id>hzqfox</id></properties>
+		</contributor>
+	</contributors>
+	
+	<mailingLists>
+		<mailingList>
+			<name>Image.sc Forum</name>
+			<archive>https://forum.image.sc/</archive>
+		</mailingList>
+	</mailingLists>
+
+	<scm>
+		<connection>scm:git:git://github.com/imagej/example-legacy-plugin</connection>
+		<developerConnection>scm:git:git@github.com:imagej/example-legacy-plugin</developerConnection>
+		<tag>HEAD</tag>
+		<url>https://github.com/imagej/example-legacy-plugin</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/imagej/example-legacy-plugin/issues</url>
+	</issueManagement>
+	<ciManagement>
+		<system>None</system>
+	</ciManagement>
+
+	<repositories>
+		<repository>
+			<id>imagej.public</id>
+			<url>http://maven.imagej.net/content/groups/public</url>
+		</repository>
+	</repositories>
+	
+	<properties>
+		<package-name>uk.ac.cam.cruk.fglab</package-name>
+		<main-class>uk.ac.cam.cruk.fglab.FucciMitosisAnalysis</main-class>
+		<license.licenseName>bsd_2</license.licenseName>
+		<license.copyrightOwners>NA</license.copyrightOwners>
+	</properties>
+	
+	<dependencies>
+	
+	<dependency>
+		<groupId>net.imagej</groupId>
+		<artifactId>ij</artifactId>
+		<version>1.52o</version>
+	</dependency>
+	<dependency>
+		<groupId>net.imagej</groupId>
+		<artifactId>imagej</artifactId>
+	</dependency>
+		
+	<dependency>
+		<groupId>sc.fiji</groupId>
+		<artifactId>fiji-lib</artifactId>
+		<version>2.1.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>sc.fiji</groupId>
+	    <artifactId>TrackMate_</artifactId>
+	    <version>3.7.0</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-io</artifactId>
+	    <version>1.3.2</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>ome</groupId>
+	    <artifactId>ome-xml</artifactId>
+	    <version>5.2.4</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>ome</groupId>
+	    <artifactId>formats-gpl</artifactId>
+	    <version>6.0.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>loci</groupId>
+	    <artifactId>loci_plugins</artifactId>
+	    <version>4.4.9</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>loci</groupId>
+	    <artifactId>loci-common</artifactId>
+	    <version>4.4.12</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.apache.commons</groupId>
+	    <artifactId>commons-math3</artifactId>
+	    <version>3.6.1</version>
+	</dependency>
+	
+	<dependency>
+	    <groupId>org.jdom</groupId>
+	    <artifactId>jdom2</artifactId>
+	    <version>2.0.6</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>csbdresden</groupId>
+		<artifactId>stardist</artifactId>
+		<scope>system</scope>
+		<systemPath>/Applications/Fiji.app/plugins/StarDist_-0.1.0.jar</systemPath>
+		<version>0.1.0</version>
+	</dependency>
+	</dependencies>
+	
+</project>
